@@ -35,7 +35,7 @@
     &__thumb {
         inset-inline-end: clampCal(24, 140, 1199, 1599);
         text-align: end;
-        max-width: 41%;
+        max-width: 53%;
         @include msm-screen {
             max-width: 50%;
             position: relative !important; 

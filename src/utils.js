@@ -1,8 +1,8 @@
-export const { phone1 , phone2, email, website, address } = {
-  phone1: "+91 75060 59237",
-  phone2: "+91 990 245 9001",
-  email: "sales@megatradeinc.in",
-  website: "www.megatradeinc.in",
+export const { phone1, phone2, email, website, address } = {
+  phone1: "+91 88840 57812",
+  phone2: "+91 81500 17777",
+  email: "sales@akfire.in",
+  website: "www.akfire.in",
   address:
-    "Mega Trade Inc. 84/1, 3rd Cross, 2nd Main, Sampangi Rama Nagar, Bangalore – 560027",
+    "Unit No. 114, 1st Floor, Dipti Square, Subhash Road, Jogeshwari (East), Near R.C. Industrial Estate, Mumbai – 400060",
 };

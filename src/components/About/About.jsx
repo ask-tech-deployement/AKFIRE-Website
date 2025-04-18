@@ -12,7 +12,7 @@ const About = () => {
           <div className="row align-items-center mx-5 py-36 ">
             <div className="col-lg-6 my-4 mb-lg-0">
               <h5 className="font-weight-bold text-primary mb-3 flex-align-start">
-                About <span className="text-dark">Mega Trade Inc</span>
+                About <span className="text-dark"> AK Fire Safety Solutions Inc</span>
               </h5>
               <h2 className="mb-3">
                 Your trusted partner for workplace solutions since 2017.
@@ -21,7 +21,7 @@ const About = () => {
             <div className="col-lg-6 text-center">
               <img
                 src="https://buroneed.com/wp-content/uploads/2020/02/about-banner-01-2.jpg"
-                alt="About Mega Trade Inc"
+                alt="About  AK Fire Safety Solutions Inc"
                 className="img-fluid rounded shadow"
                 style={{ maxHeight: "400px" }}
               />
@@ -29,7 +29,7 @@ const About = () => {
           </div>
           <div className="p-10">
             <p className="text-dark">
-              Mega Trade Inc (MTI), established in 2017, is a leading supplier
+               AK Fire Safety Solutions Inc (MTI), established in 2017, is a leading supplier
               of high-quality office supplies, pantry consumables, housekeeping
               products, and equipment to the corporate world in Bangalore,
               Chennai, and Mumbai. With over 30 years of combined experience,
@@ -73,7 +73,7 @@ const About = () => {
             <div className="col-md-6">
               <div className="card">
                 <h4 className="text-primary font-weight-bold mb-10">
-                  Why Choose Mega Trade Inc?
+                  Why Choose  AK Fire Safety Solutions Inc?
                 </h4>
                 <p className="text-muted">
                   Our innovative housekeeping chemicals, <br /> comparable to

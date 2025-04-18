@@ -13,7 +13,7 @@ const BottomFooter = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Mega Trade.{" "}
+               AK Fire Safety Solutions.{" "}
             </a>
             All rights reserved. | Designed and developed by{" "}
             <a

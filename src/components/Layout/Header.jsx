@@ -119,30 +119,35 @@ const Header = () => {
     <>
       <div className="overlay" />
       <ul
-        className="d-lg-flex d-none justify-content-center py-8 gap-32 align-items-center"
+        className="d-lg-flex d-none justify-content-center py-8 gap-32 align-items-center bg-warning-400"
         style={{ backgroundColor: "#c6d6de" }}
       >
         <li>
-          <FaPhoneAlt />
-          <a href={`tel:${phone1}`}>{phone1}</a> |{" "}
-          <a href={`tel:${phone2}`}>{phone2}</a>
+          <FaPhoneAlt className="text-dark" />
+          <a href={`tel:${phone1}`} className="text-dark">
+            {phone1}
+          </a>{" "}
+          |{" "}
+          <a href={`tel:${phone2}`} className="text-dark">
+            {phone2}
+          </a>
         </li>
         <li>
-          <a href={`mailto:${email}`}>
-            <MdEmail /> {email}
+          <a href={`mailto:${email}`} className="text-dark">
+            <MdEmail className="text-dark" /> {email}
           </a>
         </li>
         <li className="d-flex gap-10">
-          <a href="#">
+          <a href="#" className="text-dark">
             <FaXTwitter />
           </a>
-          <a href="#">
+          <a href="#" className="text-dark">
             <FaFacebookF />
           </a>
-          <a href="#">
+          <a href="#" className="text-dark">
             <FaLinkedinIn />
           </a>
-          <a href="#">
+          <a href="#" className="text-dark">
             <BsInstagram />
           </a>
         </li>
@@ -182,7 +187,7 @@ const Header = () => {
               }}
               style={{ backgroundColor: "var(--main-900)" }}
               type="button"
-              className="w-48 h-48 rounded-circle flex-center text-xl text-white position-absolute top-50 translate-middle-y inset-inline-end-0 me-8"
+              className="w-48 h-48  rounded-circle flex-center text-xl text-white position-absolute top-50 translate-middle-y inset-inline-end-0 me-8"
             >
               <i className="ph ph-magnifying-glass" />
             </button>
@@ -190,6 +195,7 @@ const Header = () => {
         </div>
       </div>
       {/* ==================== Search Box End Here ==================== */}
+
       {/* ==================== Mobile Menu Start Here ==================== */}
       <div
         className={`mobile-menu scroll-sm d-lg-none d-block ${
@@ -331,15 +337,16 @@ const Header = () => {
         </ul>
       </div>
       {/* ==================== Mobile Menu End Here ==================== */}
+
       {/* ======================= Middle Header Two Start ========================= */}
       <div className={`full-header bg-white ${scroll && "fixed-header"}`}>
         <header className="header-middle style-two">
-          <div className="container container-lg">
+          <div className="container container-md">
             <nav className="header-inner flex-between">
               {/* Logo Start */}
               <div className="logo">
                 <Link to="/" className="link">
-                  <img src={logo} style={{ maxWidth: "150px" }} alt="Logo" />
+                  <img src={logo} style={{ maxWidth: "100px" }} alt="Logo" />
                 </Link>
               </div>
               {/* Logo End  */}
@@ -380,7 +387,7 @@ const Header = () => {
                     <button
                       onClick={handleClickFilter}
                       type="button"
-                      className="bg-main-two-600 flex-center text-xl text-white flex-shrink-0 w-48 hover-bg-main-two-700 d-lg-flex d-none"
+                      className="bg-danger-600 flex-center text-xl text-white flex-shrink-0 w-48 hover-bg-main-two-700 d-lg-flex d-none"
                     >
                       <i className="ph ph-magnifying-glass" />
                     </button>
@@ -429,86 +436,9 @@ const Header = () => {
         {/* ======================= Middle Header Two End ========================= */}
         {/* ==================== Header Two Start Here ==================== */}
         <header className="header border-bottom border-gray-100 ">
-          <div className="container container-lg">
+          <div className="container container-lg bg-light-800 d-flex justify-content-center ">
             <nav className="header-inner d-flex justify-content-between gap-8">
               <div className="flex-align menu-category-wrapper">
-                <div className="d-flex d-lg-none">
-                  <button
-                    onClick={handleCategoryToggle}
-                    type="button"
-                    className="category__button flex-align gap-8 fw-medium bg-main-two-600 p-16 text-white"
-                  >
-                    <span className="icon text-2xl d-xs-flex d-none">
-                      <i className="ph ph-dots-nine" />
-                    </span>
-                    <span className="d-sm-flex d-none">All</span> Categories
-                  </button>
-                </div>
-                <div
-                  className={`category main  on-hover-item text-white d-block`}
-                >
-                  <button
-                    type="button"
-                    className="category__button flex-align gap-8 fw-medium p-16 border-end border-start border-gray-100  category-two text-white"
-                  >
-                    <span className="icon text-2xl d-xs-flex d-none">
-                      <i className="ph ph-dots-nine" />
-                    </span>
-                    <span className="d-sm-flex d-none">All</span> Categories
-                    <span className="arrow-icon text-xl d-flex">
-                      <i className="ph ph-caret-down" />
-                    </span>
-                  </button>
-                  <div className="responsive-dropdown on-hover-dropdown common-dropdown nav-submenu p-0 submenus-submenu-wrapper">
-                    <button
-                      type="button"
-                      className="close-responsive-dropdown rounded-circle text-xl position-absolute inset-inline-end-0 inset-block-start-0 mt-4 me-8 d-lg-none d-flex"
-                    >
-                      <i className="ph ph-x" />{" "}
-                    </button>
-                    <div className="logo px-16 d-lg-none d-block">
-                      <Link to="/" className="link">
-                        <img src={logo} alt="Logo" />
-                      </Link>
-                    </div>
-                    <ul className="scroll-sm p-0 py-8 w-300 max-h-400 overflow-y-auto">
-                      {categorys.map((mainCat) => (
-                        <li
-                          key={mainCat.MainCategory_Id}
-                          className="has-submenus-submenu"
-                        >
-                          <Link
-                            to={`/product/${mainCat.MainCategory_Id}/0`}
-                            className="text-white text-15 py-12 px-16 flex-align gap-8 rounded-0"
-                          >
-                            <span>{mainCat.MainCategory_Description}</span>
-                            <span className="icon text-md d-flex ms-auto">
-                              <i className="ph ph-caret-right" />
-                            </span>
-                          </Link>
-                          <div className="submenus-submenu py-16">
-                            <h6 className="text-lg px-16 submenus-submenu__title">
-                              {mainCat.MainCategory_Description}
-                            </h6>
-                            <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
-                              {mainCat.subCategories?.map((subcat) => (
-                                <li key={subcat.Category_Id}>
-                                  <Link
-                                    to={`/product/${mainCat.MainCategory_Id}/${subcat.Category_Id}`}
-                                    className="text-dark"
-                                  >
-                                    {subcat.Category_Description}
-                                  </Link>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-                {/* Category Dropdown End  */}
                 {/* Menu Start  */}
                 <div className="header-menu d-lg-block d-none">
                   {/* Nav Menu Start */}
@@ -525,6 +455,80 @@ const Header = () => {
                       >
                         Home
                       </Link>
+                    </li>
+                    <li className="nav-menu__item">
+                      <div className="d-flex d-lg-none">
+                        <button
+                          onClick={handleCategoryToggle}
+                          type="button"
+                          className="category__button flex-align gap-8 fw-medium bg-main-two-600  text-white"
+                        >
+                          <span className="d-sm-flex d-none"></span> Products
+                        </button>
+                      </div>
+                      <div
+                        className={`category main  on-hover-item text-white d-block`}
+                      >
+                        <button
+                          type="button"
+                          className="category__button flex-align gap-8 fw-medium   border-gray-100   text-white"
+                        >
+                          <span className="d-sm-flex d-none"></span> Products
+                          <span className="arrow-icon text-xl d-flex">
+                            <i className="ph ph-caret-down" />
+                          </span>
+                        </button>
+                        <div className="responsive-dropdown on-hover-dropdown common-dropdown nav-submenu p-0 submenus-submenu-wrapper">
+                          <button
+                            type="button"
+                            className="close-responsive-dropdown rounded-circle text-xl position-absolute inset-inline-end-0 inset-block-start-0 mt-4 me-8 d-lg-none d-flex"
+                          >
+                            <i className="ph ph-x" />{" "}
+                          </button>
+                          <div className="logo px-16 d-lg-none d-block">
+                            <Link to="/" className="link">
+                              <img src={logo} alt="Logo" />
+                            </Link>
+                          </div>
+                          <ul className="scroll-sm p-0 py-8 w-300 max-h-400 overflow-y-auto">
+                            {categorys.map((mainCat) => (
+                              <li
+                                key={mainCat.MainCategory_Id}
+                                className="has-submenus-submenu"
+                              >
+                                <Link
+                                  to={`/product/${mainCat.MainCategory_Id}/0`}
+                                  className="text-white text-15 py-12 px-16 flex-align gap-8 rounded-0"
+                                >
+                                  <span>
+                                    {mainCat.MainCategory_Description}
+                                  </span>
+                                  <span className="icon text-md d-flex ms-auto">
+                                    <i className="ph ph-caret-right" />
+                                  </span>
+                                </Link>
+                                <div className="submenus-submenu py-16">
+                                  <h6 className="text-lg px-16 submenus-submenu__title">
+                                    {mainCat.MainCategory_Description}
+                                  </h6>
+                                  <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
+                                    {mainCat.subCategories?.map((subcat) => (
+                                      <li key={subcat.Category_Id}>
+                                        <Link
+                                          to={`/product/${mainCat.MainCategory_Id}/${subcat.Category_Id}`}
+                                          className="text-dark"
+                                        >
+                                          {subcat.Category_Description}
+                                        </Link>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
                     </li>
                     <li
                       onClick={() => handleMenuClick(1)}
@@ -566,6 +570,7 @@ const Header = () => {
                       </NavLink>
                     </li>
                   </ul>
+
                   {/* Nav Menu End */}
                 </div>
                 {/* Menu End  */}

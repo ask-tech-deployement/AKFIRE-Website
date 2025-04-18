@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
-import Image1 from "../../assets/banner/banner-img1.png";
-import Image3 from "../../assets/banner/banner-img3.png";
-import Image4 from "../../assets/banner/banner-img6.png";
+import FireSafetyImage from "../../assets/banner/banner-img1.png";
+import ToolsImage from "../../assets/banner/banner-2.png";
+import ElectricalImage from "../../assets/banner/banner-3.png";
 import axios from "../../axios";
 
 const Banner = () => {
@@ -16,6 +16,15 @@ const Banner = () => {
     initialSlide: 0,
     autoplay: true,
     autoplaySpeed: 3000,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   };
 
   const [categorys, setCategorys] = useState([]);
@@ -42,67 +51,9 @@ const Banner = () => {
     <div className="banner-two">
       <div className="container container-lg">
         <div className="banner-two-wrapper d-flex align-items-start">
-          <div className="w-265 d-lg-block d-none flex-shrink-0   ">
-            <div className="responsive-dropdown style-two common-dropdown nav-submenu p-0 submenus-submenu-wrapper shadow-none border border-gray-100 position-relative border-top-0">
-              <button
-                type="button"
-                className="close-responsive-dropdown rounded-circle text-xl position-absolute inset-inline-end-0 inset-block-start-0 mt-4 me-8 d-lg-none d-flex"
-              >
-                <i className="ph ph-x" />{" "}
-              </button>
-              <div className="logo px-16 d-lg-none d-block">
-                <Link to="/" className="link">
-                  <img src="assets/images/logo/logo.png" alt="Logo" />
-                </Link>
-              </div>
-              <ul
-                className="responsive-dropdown__list scroll-sm p- py-8 overflow-y-auto "
-                style={{
-                  minHeight: "521px",
-                  maxHeight: "521px",
-                  overflowY: "scroll",
-                }}
-              >
-                {categorys.map((mainCat) => (
-                  <li
-                    key={mainCat.MainCategory_Id}
-                    className="has-submenus-submenu"
-                  >
-                    <Link
-                      // to={`/product/${mainCat.MainCategory_Id}/0`}
-                      className=" text-white text-15 py-12 px-16 flex-align gap-8 rounded-0"
-                    >
-                      <span>{mainCat.MainCategory_Description}</span>
-                      <span className="icon text-md d-flex ms-auto">
-                        <i className="ph ph-caret-right" />
-                      </span>
-                    </Link>
-                    <div className="submenus-submenu py-16">
-                      <h6 className="text-lg px-16 submenus-submenu__title">
-                        {mainCat.MainCategory_Description}
-                      </h6>
-                      <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
-                        {mainCat.subCategories?.map((subcat) => (
-                          <li key={subcat.Category_Id}>
-                            <Link
-                              to={`/product/${mainCat.MainCategory_Id}/${subcat.Category_Id}`}
-                              className="text-dark"
-                            >
-                              {subcat.Category_Description}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
           <div
-            style={{ maxHeight: "500px" }}
-            className="mt-20 rounded-24 overflow-hidden position-relative arrow-center flex-grow-1 mx-10 0 "
+            style={{ maxHeight: "500px", minHeight: "400px" }}
+            className="mt-20 rounded-24 overflow-hidden position-relative arrow-center flex-grow-1 mx-10"
           >
             <img
               src="assets/images/bg/banner-two-bg.png"
@@ -111,80 +62,99 @@ const Banner = () => {
             />
             <div className="banner-item-two__slider">
               <Slider {...settings}>
+                {/* Slide 1: Fire Safety Products */}
                 <div className="banner-item-two">
                   <div className="banner-item-two__content">
                     <h2 className="banner-item-two__title bounce text-white">
-                      Clean Smarter, Not Harder
+                      Protect What Matters Most
                     </h2>
                     <p className="text-white mb-8">
-                      Discover our premium cleaning solutions designed to boost
-                      productivity and well-being in your workplace.
+                      Guarding Lives with Advanced Fire Safety
+                      Solutions,Portable Extinguishers, Alarms, Suppression
+                      Systems & More
                     </p>
                     <Link
-                      to="/product/10009/0"
+                      to="/category/fire-safety"
                       className="btn btn-outline-white d-inline-flex align-items-center rounded-pill gap-8 mt-48"
                     >
-                      Shop Now
+                      Explore Fire Safety
                       <span className="icon text-xl d-flex">
-                        <i className="ph ph-shopping-cart-simple" />
+                        <i className="ph ph-fire-simple" />
                       </span>
                     </Link>
                   </div>
-                  <div className="banner-item-two__thumb position-absolute bottom-0">
-                    <img src={Image1} alt="Premium Cleaning Solutions" />
+                  <div className="banner-item-two__thumb position-absolute bottom-0 end-0">
+                    <img
+                      src={FireSafetyImage}
+                      alt="Fire Safety Products"
+                      style={{
+                        maxHeight: "700px",
+                        objectFit: "contain",
+                      }}
+                    />
                   </div>
                 </div>
 
-                {/* New Slide 1: Corporate Gifting & Promotions */}
+                {/* Slide 2: Tools & Equipment */}
                 <div className="banner-item-two">
                   <div className="banner-item-two__content">
                     <h2 className="banner-item-two__title bounce text-white">
-                      Corporate Gifting & Promotions
+                      Precision Tools for Industrial Safety
                     </h2>
                     <p className="text-white mb-8">
-                      Boost your brand's image with exceptional corporate
-                      giveaways and branding solutions that leave a lasting
-                      impact.
+                      Built to Last, Designed to Protect - Professional Grade
+                      Equipment
                     </p>
                     <Link
-                      to="/product/10011/0"
+                      to="/category/tools-equipment"
                       className="btn btn-outline-white d-inline-flex align-items-center rounded-pill gap-8 mt-48"
                     >
-                      Explore More
+                      View Tools
                       <span className="icon text-xl d-flex">
-                        <i className="ph ph-gift" />
+                        <i className="ph ph-hammer" />
                       </span>
                     </Link>
                   </div>
-                  <div className="banner-item-two__thumb position-absolute bottom-0">
-                    <img src={Image3} alt="Corporate Gifting & Promotions" />
+                  <div className="banner-item-two__thumb position-absolute bottom-0 end-0">
+                    <img
+                      src={ToolsImage}
+                      alt="Industrial Tools"
+                      style={{
+                        maxHeight: "700px",
+                        objectFit: "contain",
+                      }}
+                    />
                   </div>
                 </div>
 
-                {/* New Slide 2: Eat  */}
+                {/* Slide 3: Electrical Safety Items */}
                 <div className="banner-item-two">
                   <div className="banner-item-two__content">
                     <h2 className="banner-item-two__title bounce text-white">
-                      Snack, Sip, and Smile!
+                      Power Safely, Work Confidently
                     </h2>
                     <p className="text-white mb-8">
-                      Delight your team with a variety of pantry essentials,
-                      from cookies and biscuits to energy bars, soft drinks,
-                      juices, and water—everything you need to keep taste buds
-                      satisfied and energy levels high in the office.
+                      Shockproof Solutions for Hazard-Free Electrical Work
                     </p>
                     <Link
-                      to="/product/10012/0"
+                      to="/category/electrical-safety"
                       className="btn btn-outline-white d-inline-flex align-items-center rounded-pill gap-8 mt-48"
                     >
-                      Explore
+                      Electrical Solutions
                       <span className="icon text-xl d-flex">
-                        <i className="ph ph-shield-check" />
+                        <i className="ph ph-lightning" />
                       </span>
                     </Link>
                   </div>
-                  <div className="banner-item-two__thumb position-absolute bottom-0">
-                    <img src={Image4} alt="PPE Consumables" />
+                  <div className="banner-item-two__thumb position-absolute bottom-0 end-0">
+                    <img
+                      src={ElectricalImage}
+                      alt="Electrical Safety Equipment"
+                      style={{
+                        maxHeight: "700px",
+                        objectFit: "contain",
+                      }}
+                    />
                   </div>
                 </div>
               </Slider>

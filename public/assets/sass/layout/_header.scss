@@ -67,9 +67,9 @@
     &__item {
         &.activePage {
             > a {
-                color: hsl(var(--main));
+                color: darkorange;
                 &::before {
-                    color: hsl(var(--main));
+                    color:  darkorange;
                 }
             }
         }
@@ -171,7 +171,7 @@
         &.activePage {
             .common-dropdown {
                 &__link {
-                    color: hsl(var(--main)) !important;
+                    color:  darkorange !important;
                 }
             }
         }
