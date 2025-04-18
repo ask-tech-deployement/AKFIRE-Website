@@ -346,7 +346,7 @@ const Header = () => {
               {/* Logo Start */}
               <div className="logo">
                 <Link to="/" className="link">
-                  <img src={logo} style={{ maxWidth: "100px" }} alt="Logo" />
+                  <img src={logo} style={{ maxWidth: "65px" }} alt="Logo" />
                 </Link>
               </div>
               {/* Logo End  */}
@@ -398,7 +398,7 @@ const Header = () => {
               {/* Header Middle Right start */}
               <div className="header-right flex-align d-lg-block d-none">
                 <div className="header-two-activities flex-align flex-wrap gap-32">
-                  <Link
+                  {/* <Link
                     to="http://targetdemo.asktek.net/tompg.buroneed.webapp/"
                     className="flex-align flex-column gap-8 item-hover-two"
                     target="_blank"
@@ -409,7 +409,7 @@ const Header = () => {
                     <span className="text-md item-hover__text d-none d-lg-flex">
                       Login
                     </span>
-                  </Link>
+                  </Link> */}
                   <Link
                     to="/cart"
                     className="flex-align flex-column gap-8 item-hover-two"
@@ -589,7 +589,7 @@ const Header = () => {
                       </span>
                     </button>
 
-                    <Link
+                    {/* <Link
                       to="http://targetdemo.asktek.net/tompg.buroneed.webapp/"
                       className="flex-align flex-column gap-8 item-hover-two"
                     >
@@ -599,7 +599,7 @@ const Header = () => {
                       <span className="text-md text-white item-hover__text d-none d-lg-flex">
                         Login
                       </span>
-                    </Link>
+                    </Link> */}
 
                     <Link
                       to="/cart"

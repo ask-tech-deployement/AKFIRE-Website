@@ -15,11 +15,11 @@ const PromotionalOneBuroNeel = () => {
               />
               <div className="promotional-banner-item__content">
                 <h6 className="promotional-banner-item__title text-32">
-                  Fire Detection Systems
+                  Office Stationery Items
                 </h6>
                 <Link
                   to="/product/1/2"
-                  className="btn btn-main bg-gray-700 d-inline-flex align-items-center rounded-pill gap-8 mt-24"
+                  className="btn btn-main d-inline-flex align-items-center rounded-pill gap-8 mt-24"
                 >
                   Explore
                   <span className="icon text-xl d-flex">
@@ -38,11 +38,11 @@ const PromotionalOneBuroNeel = () => {
               />
               <div className="promotional-banner-item__content">
                 <h6 className="promotional-banner-item__title text-32">
-                  Personal Protective Equipment
+                  Cleaning Products Range
                 </h6>
                 <Link
                   to="/product/10009/20010"
-                  className="btn btn-main bg-gray-700 d-inline-flex align-items-center rounded-pill gap-8 mt-24"
+                  className="btn btn-main d-inline-flex align-items-center rounded-pill gap-8 mt-24"
                 >
                   Explore
                   <span className="icon text-xl d-flex">
@@ -61,12 +61,11 @@ const PromotionalOneBuroNeel = () => {
               />
               <div className="promotional-banner-item__content">
                 <h6 className="promotional-banner-item__title text-32">
-                  Emergency Rescue <br />
-                  Tools
+                  Kitchen Pantry Supplies
                 </h6>
                 <Link
                   to="/product/2/10003"
-                  className="btn btn-main bg-gray-700 d-inline-flex align-items-center rounded-pill gap-8 mt-24"
+                  className="btn btn-main d-inline-flex align-items-center rounded-pill gap-8 mt-24"
                 >
                   Explore
                   <span className="icon text-xl d-flex">
@@ -85,11 +84,11 @@ const PromotionalOneBuroNeel = () => {
               />
               <div className="promotional-banner-item__content">
                 <h6 className="promotional-banner-item__title text-32">
-                  Industrial Safety Equipment
+                  Corporate Gifting Solutions
                 </h6>
                 <Link
                   to="/product/10011/20013"
-                  className="btn btn-main bg-gray-700 d-inline-flex align-items-center rounded-pill gap-8 mt-24"
+                  className="btn btn-main d-inline-flex align-items-center rounded-pill gap-8 mt-24"
                 >
                   Explore
                   <span className="icon text-xl d-flex">
