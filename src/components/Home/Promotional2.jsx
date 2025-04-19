@@ -18,13 +18,10 @@ const Promotional2 = () => {
                 className="position-absolute inset-block-start-0 inset-inline-start-0 w-100 h-100 object-fit-cover z-n1"
               />
               <div className="text-container pe-xxl-4">
-                <h6
-                  className="mb-8"
-                  style={{ color: "white" }}
-                >
+                <h6 className="mb-8" style={{ color: "white" }}>
                   Fire Safety Solutions
                 </h6>
-                <p className="mb-16"  style={{ color: "white" }}>
+                <p className="mb-16" style={{ color: "white" }}>
                   Protect your assets with fire alarms, extinguishers, and
                   safety gear.
                 </p>
@@ -57,8 +54,10 @@ const Promotional2 = () => {
                 className="position-absolute inset-block-start-0 inset-inline-start-0 w-100 h-100 object-fit-cover z-n1"
               />
               <div className="text-container pe-xxl-4">
-                <h6 className="text-heading mb-8">Tools & Equipment</h6>
-                <p className="mb-16">
+                <h6 className=" mb-8" style={{ color: "white" }}>
+                  Tools & Equipment
+                </h6>
+                <p className="mb-16" style={{ color: "white" }}>
                   Essential tools and safety equipment for industrial needs and
                   beyond.
                 </p>
@@ -91,8 +90,10 @@ const Promotional2 = () => {
                 className="position-absolute inset-block-start-0 inset-inline-start-0 w-100 h-100 object-fit-cover z-n1"
               />
               <div className="text-container pe-xxl-4">
-                <h6 className="text-heading mb-8">Electrical Supplies</h6>
-                <p className="mb-16">
+                <h6 className=" mb-8" style={{ color: "white" }}>
+                  Electrical Supplies
+                </h6>
+                <p className="mb-16" style={{ color: "white" }}>
                   Find everything from electrical components to installation
                   tools.
                 </p>

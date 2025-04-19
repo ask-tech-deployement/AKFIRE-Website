@@ -1,31 +1,33 @@
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+/* Custom Styling for About Page */
+.about-us-section {
+  background-color: #f9f9f9;
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
   height: 100%;
-  padding: 40px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center; /* Ensures text is aligned properly */
-  transition: transform 0.34s;
 }
 
-.card:hover{
-  transform: translate(-5px , -5px);
-  box-shadow:5px 5px rgba(0, 0, 0, 0.1);
+.card:hover {
+  transform: translateY(-5px);
 }
 
-.card h4 {
-  line-height: 1.5; /* Ensures proper spacing between lines */
+.text-primary {
+  color: #e74c3c !important; /* Fire-themed red */
 }
 
-.card p {
-  margin-top: 10px;
+.bg-secondary {
+  background-color: #e74c3c !important; /* Fire-themed red */
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.img-fluid {
+  border: 5px solid #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }

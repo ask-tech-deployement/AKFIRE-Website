@@ -72,7 +72,7 @@
     --body-color: var(--light);
     --body-bg: var(--gray);
     --border-color: 236 13% 77%;
-    --bg-color-one: #F3FAF2;
+    --bg-color-one: #e1b0aa;
     --bg-color-two: #FFFBF4;
     --bg-color-three: #F1F1F1;
     --neutral: #003dab;
@@ -8493,7 +8493,7 @@ input:focus-visible {
     width: 100%;
     height: 100%;
     max-width: 190px;
-    max-height: 64px;
+    max-height: 190px;
 }
 
 .body-bottom-bg {

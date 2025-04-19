@@ -19,7 +19,7 @@ const Home = () => {
       <Promotional2 />
       <ProductSlider title="Office Stationery" categoryid={1} />
       <PromotionalBanner1 />
-      <Collabs />
+      {/* <Collabs /> */}
       <ProductSlider title="Computer Accessories" categoryid={3} />
       <Brands />
     </>

@@ -93,7 +93,7 @@ const Brands = () => {
           </div>
           <div className="top-brand__slider">
             <Slider {...settings}>
-              {times(24, (i) => (
+              {times(10, (i) => (
                 <div key={i}>
                   <div className="top-brand__item flex-center rounded-8 border border-gray-100 hover-border-gray-200 transition-1 px-8">
                     <img

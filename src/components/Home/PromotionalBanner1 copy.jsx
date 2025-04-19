@@ -17,12 +17,12 @@ const PromotionalBanner1 = () => {
             <img src={ppe1} alt="" />
           </div>
           <div className="day-sale-box__content d-block w-100 text-start py-32 ps-lg-0 ps-24">
-            <h3 className="text-white fw-bold mb-24 text-sm">GEAR UP FOR SAFETY </h3>
-            <h5 className="text-white fw-medium mb-8">
-              INDUSTRIAL TOOLS & ESSENTIAL EQUIPMENT
-            </h5>
+            <h3 className="text-white fw-medium mb-24">STAY EQUIPPED </h3>
+            <h6 className="text-white fw-medium mb-8">
+              ESSENTIAL STATIONARY ITEMS
+            </h6>
             <h6 className="text-white fw-medium mb-0">
-              SPANNERS, PLIERS, PPE KITS & MORE
+              NOTE & BOOKS, PEN & PENCIL , MORE
             </h6>
             <Link
               to="/product/10012/0"

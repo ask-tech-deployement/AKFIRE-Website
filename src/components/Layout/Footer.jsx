@@ -9,7 +9,7 @@ import { phone1, phone2, email, address } from "../../utils";
 
 const Footer = () => {
   return (
-    <footer className="footer py-40 mt-40 bg-color-one">
+    <footer className="footer py-40 mt-40 " style={{backgroundColor:'#ffa5007a'}}>
       <div className="container container-lg">
         <div className="footer-item-two-wrapper d-flex align-items-start flex-wrap justify-content-center">
           <div className="footer-item max-w-300">
@@ -19,7 +19,7 @@ const Footer = () => {
                 <img src={logo} alt="" style={{ mixBlendMode: "multiply" }} />
               </Link>
             </div>
-            <p className="mb-24 fw-bold">
+            <p className="mb-24 fw-bold text-gray-900 text-center">
             Supplies That Empower Your Office
             </p>
           </div>
@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
 
           <div className="footer-item">
-            <h6 className="footer-item__title">About</h6>
+            {/* <h6 className="footer-item__title">About</h6> */}
             <ul className="footer-menu">
               <li className="mb-16">
                 <Link to="/" className="text-gray-600 hover-text-main-600">
