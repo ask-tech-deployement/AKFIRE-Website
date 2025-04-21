@@ -4,6 +4,7 @@ import query from "jquery";
 import "select2";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { FaPhoneAlt, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaXTwitter } from "react-icons/fa6";
 import { BsInstagram } from "react-icons/bs";
@@ -139,16 +140,15 @@ const Header = () => {
         </li>
         <li className="d-flex gap-10">
           <a href="#" className="text-dark">
-            <FaXTwitter />
-          </a>
-          <a href="#" className="text-dark">
             <FaFacebookF />
           </a>
-          <a href="#" className="text-dark">
-            <FaLinkedinIn />
-          </a>
-          <a href="#" className="text-dark">
-            <BsInstagram />
+          <a
+            href={`https://wa.me/918884057812`}
+            className="text-dark"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaWhatsapp />
           </a>
         </li>
       </ul>
@@ -201,6 +201,7 @@ const Header = () => {
         className={`mobile-menu scroll-sm d-lg-none d-block ${
           menuActive && "active"
         }`}
+        style={{ backgroundColor: "orange" }}
       >
         <button
           onClick={() => {
@@ -579,7 +580,15 @@ const Header = () => {
               </div>
               {/* Header Right start */}
               <div className="header-right flex-align">
-                <div className="me-8 d-lg-none d-block">
+                <div className="me-8 d-lg-none d-block ">
+                  <button
+                    onClick={handleMenuToggle}
+                    type="button"
+                    className="toggle-mobileMenu d-lg-none ms-3n text-4xl d-flex "
+                  >
+                    {" "}
+                    <i className="ph ph-list text-white" />{" "}
+                  </button>
                   <div className="header-two-activities flex-align flex-wrap gap-32">
                     <button
                       onClick={handleSearchToggle}
@@ -621,14 +630,6 @@ const Header = () => {
                     </Link>
                   </div>
                 </div>
-                <button
-                  onClick={handleMenuToggle}
-                  type="button"
-                  className="toggle-mobileMenu d-lg-none ms-3n text-4xl d-flex "
-                >
-                  {" "}
-                  <i className="ph ph-list text-white" />{" "}
-                </button>
               </div>
               {/* Header Right End  */}
             </nav>

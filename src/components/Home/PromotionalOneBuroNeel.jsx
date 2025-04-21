@@ -15,7 +15,9 @@ const PromotionalOneBuroNeel = () => {
               />
               <div className="promotional-banner-item__content">
                 <h6 className="promotional-banner-item__title text-32">
-                  Fire Detection Systems
+                  Fire <br />
+                  Detection <br />
+                  Systems
                 </h6>
                 <Link
                   to="/product/1/2"
@@ -38,7 +40,9 @@ const PromotionalOneBuroNeel = () => {
               />
               <div className="promotional-banner-item__content">
                 <h6 className="promotional-banner-item__title text-32">
-                  Personal Protective Equipment
+                  Personal <br />
+                  Protective
+                  <br /> Equipment
                 </h6>
                 <Link
                   to="/product/2/5"
@@ -61,7 +65,7 @@ const PromotionalOneBuroNeel = () => {
               />
               <div className="promotional-banner-item__content">
                 <h6 className="promotional-banner-item__title text-32">
-                  Emergency Rescue <br />
+                  Emergency <br /> Rescue <br />
                   Tools
                 </h6>
                 <Link

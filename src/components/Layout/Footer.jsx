@@ -3,6 +3,7 @@ import logo from "../../assets/header/logo.png";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaLinkedinIn, FaPhoneAlt } from "react-icons/fa";
 import { FaXTwitter, FaLocationDot } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { BsInstagram } from "react-icons/bs";
 import { phone1, phone2, email, address } from "../../utils";
@@ -23,7 +24,7 @@ const Footer = () => {
               </Link>
             </div>
             <p className="mb-24 fw-bold text-gray-900 text-center">
-              Supplies That Empower Your Office
+              Trusted Safety Solutions for Every Need
             </p>
           </div>
 
@@ -95,24 +96,19 @@ const Footer = () => {
           <div className="footer-item">
             <h6 className="footer-item__title">Find us on</h6>
             <ul className="footer-menu d-flex justify-content-center py-8 gap-14 align-items-center">
-              <li className="d-flex gap-10">
-                <a href="#">
-                  <FaXTwitter />
-                </a>
-              </li>
               <li>
                 <a href="#">
                   <FaFacebookF />
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <BsInstagram />
+                <a
+                  href={`https://wa.me/918884057812`}
+                  className="text-dark"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaWhatsapp />
                 </a>
               </li>
             </ul>

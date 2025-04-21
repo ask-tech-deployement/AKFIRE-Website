@@ -20,7 +20,7 @@ const BottomFooter = () => {
             </a>
             All rights reserved. | Designed and developed by{" "}
             <a href="https://asktek.net/" target="_blank" rel="noreferrer">
-              ASK Technologies
+              ASK Technology
             </a>
           </p>
         </div>
