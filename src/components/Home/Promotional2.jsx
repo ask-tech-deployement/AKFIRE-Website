@@ -26,7 +26,7 @@ const Promotional2 = () => {
                   safety gear.
                 </p>
                 <Link
-                  to="/product/10026/0"
+                  to="/product/1/0"
                   className="d-inline-flex align-items-center gap-8 text-heading text-md fw-medium border border-top-0 border-end-0 border-start-0 border-gray-900 hover-text-main-two-600 hover-border-main-two-600"
                 >
                   Explore Now
@@ -62,7 +62,7 @@ const Promotional2 = () => {
                   beyond.
                 </p>
                 <Link
-                  to="/product/10024/0"
+                  to="/product/3/0"
                   className="d-inline-flex align-items-center gap-8 text-heading text-md fw-medium border border-top-0 border-end-0 border-start-0 border-gray-900 hover-text-main-two-600 hover-border-main-two-600"
                 >
                   Explore Now
@@ -98,7 +98,7 @@ const Promotional2 = () => {
                   tools.
                 </p>
                 <Link
-                  to="/product/10025/0"
+                  to="/product/2/0"
                   className="d-inline-flex align-items-center gap-8 text-heading text-md fw-medium border border-top-0 border-end-0 border-start-0 border-gray-900 hover-text-main-two-600 hover-border-main-two-600"
                 >
                   Explore Now

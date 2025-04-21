@@ -265,7 +265,7 @@ const Header = () => {
                     activeIndex === 3 ? "activePage" : ""
                   }`}
                 >
-                  Contact Us
+                  Enquiry
                 </Link>
               </li>
             </ul>
@@ -417,7 +417,7 @@ const Header = () => {
                     <span className="text-2xl d-flex position-relative me-6 mt-6 item-hover__text">
                       <i className="ph ph-shopping-cart-simple" />
                       {Object.keys(cartItems).length > 0 && (
-                        <span className="w-16 h-16 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4">
+                        <span className="w-16 h-16 flex-center rounded-circle bg-warning-800 text-white text-xs position-absolute top-n6 end-n4">
                           {Object.keys(cartItems).length}
                         </span>
                       )}
@@ -461,9 +461,11 @@ const Header = () => {
                         <button
                           onClick={handleCategoryToggle}
                           type="button"
-                          className="category__button flex-align gap-8 fw-medium bg-main-two-600  text-white"
+                          className={`category__button flex-align gap-8 fw-medium bg-warning-800  text-white nav-menu__link ${
+                            activeIndex === 0 ? "activePage" : ""
+                          } `}
                         >
-                          <span className="d-sm-flex d-none"></span> Products
+                          Products
                         </button>
                       </div>
                       <div
@@ -473,7 +475,7 @@ const Header = () => {
                           type="button"
                           className="category__button flex-align gap-8 fw-medium   border-gray-100   text-white"
                         >
-                          <span className="d-sm-flex d-none"></span> Products
+                          Products
                           <span className="arrow-icon text-xl d-flex">
                             <i className="ph ph-caret-down" />
                           </span>
@@ -566,7 +568,7 @@ const Header = () => {
                           activeIndex === 3 ? "activePage" : ""
                         }`}
                       >
-                        Contact Us
+                        Enquiry
                       </NavLink>
                     </li>
                   </ul>
@@ -608,7 +610,7 @@ const Header = () => {
                       <span className="text-2xl d-flex position-relative me-6 mt-6 item-hover__text">
                         <i className="ph ph-shopping-cart-simple text-white" />
                         {Object.keys(cartItems).length > 0 && (
-                          <span className="w-16 h-16 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4">
+                          <span className="w-16 h-16 flex-center rounded-circle bg-warning-800 text-white text-xs position-absolute top-n6 end-n4">
                             {Object.keys(cartItems).length || ""}
                           </span>
                         )}

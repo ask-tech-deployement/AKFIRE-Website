@@ -145,7 +145,7 @@
     @extend .box-shadow-lg; 
     inset-block-start: 100%;
     width: max-content;
-    background-color: var(--main-900);
+    background-color: orange;
     border-radius: 6px;
     min-width: 190px;
     overflow: hidden;
@@ -279,7 +279,7 @@
     @media (min-width: 992px) {
         &:hover {
             .category__button {
-                color: var(--main-400) !important;
+                color: orange !important;
                 // background-color: var(--gray-50) !important;
                 .arrow-icon i::before {
                     content: "\E13C";

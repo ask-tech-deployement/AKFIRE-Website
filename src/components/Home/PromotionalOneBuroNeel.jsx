@@ -41,7 +41,7 @@ const PromotionalOneBuroNeel = () => {
                   Personal Protective Equipment
                 </h6>
                 <Link
-                  to="/product/10009/20010"
+                  to="/product/2/5"
                   className="btn btn-main bg-gray-700 d-inline-flex align-items-center rounded-pill gap-8 mt-24"
                 >
                   Explore
@@ -65,7 +65,7 @@ const PromotionalOneBuroNeel = () => {
                   Tools
                 </h6>
                 <Link
-                  to="/product/2/10003"
+                  to="/product/3/9"
                   className="btn btn-main bg-gray-700 d-inline-flex align-items-center rounded-pill gap-8 mt-24"
                 >
                   Explore
@@ -88,7 +88,7 @@ const PromotionalOneBuroNeel = () => {
                   Industrial Safety Equipment
                 </h6>
                 <Link
-                  to="/product/10011/20013"
+                  to="/product/3/8"
                   className="btn btn-main bg-gray-700 d-inline-flex align-items-center rounded-pill gap-8 mt-24"
                 >
                   Explore

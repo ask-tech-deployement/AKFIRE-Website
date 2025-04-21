@@ -25,7 +25,7 @@ const PromotionalBanner1 = () => {
               SPANNERS, PLIERS, PPE KITS & MORE
             </h6>
             <Link
-              to="/product/10012/0"
+              to="/product/2/0"
               className="btn btn-outline-white flex-align d-inline-flex rounded-pill gap-8 mt-28"
               tabIndex={0}
             >

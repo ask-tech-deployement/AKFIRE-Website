@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // const baseURL = "http://localhost:1545/api"
-const baseURL = "https://live.asktek.net/megatrade_manage_website_api/api";
+const baseURL = "https://live.asktek.net/akfire_manage_website_api/api";
 export const imageURL = baseURL + "/Public";
 
 export default axios.create({

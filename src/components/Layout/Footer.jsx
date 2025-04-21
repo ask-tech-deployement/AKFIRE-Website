@@ -9,7 +9,10 @@ import { phone1, phone2, email, address } from "../../utils";
 
 const Footer = () => {
   return (
-    <footer className="footer py-40 mt-40 " style={{backgroundColor:'#ffa5007a'}}>
+    <footer
+      className="footer py-40 mt-40 "
+      style={{ backgroundColor: "rgb(235 197 52)" }}
+    >
       <div className="container container-lg">
         <div className="footer-item-two-wrapper d-flex align-items-start flex-wrap justify-content-center">
           <div className="footer-item max-w-300">
@@ -20,16 +23,17 @@ const Footer = () => {
               </Link>
             </div>
             <p className="mb-24 fw-bold text-gray-900 text-center">
-            Supplies That Empower Your Office
+              Supplies That Empower Your Office
             </p>
           </div>
 
           <div className="footer-item" style={{ maxWidth: "500px" }}>
-            <div
-              className="flex-align gap-16 mb-16 d-flex align-items-center"
-            >
+            <div className="flex-align gap-16 mb-16 d-flex align-items-center">
               <FaPhoneAlt />
-              <div className="d-flex gap-10 flex-column" style={{ flexWrap: "wrap" }}>
+              <div
+                className="d-flex gap-10 flex-column"
+                style={{ flexWrap: "wrap" }}
+              >
                 <a
                   href={`tel:${phone1}`}
                   className="text-md text-gray-900 hover-text-main-600"
@@ -42,7 +46,6 @@ const Footer = () => {
                 >
                   {phone2}
                 </a>
-               
               </div>
             </div>
             <div className="flex-align gap-16 mb-16">
@@ -84,7 +87,7 @@ const Footer = () => {
                   to="/contact"
                   className="text-gray-600 hover-text-main-600"
                 >
-                  Contact Us
+                  Enquiry
                 </Link>
               </li>
             </ul>

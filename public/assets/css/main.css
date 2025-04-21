@@ -5055,7 +5055,7 @@ input:focus-visible {
 }
 
 .hover-text-main-600:hover {
-    color: var(--main-600) !important;
+    color: orange !important;
 }
 
 .hover-text-main-700:hover {
