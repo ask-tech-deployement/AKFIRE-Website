@@ -8,7 +8,8 @@ import {
   Typography,
 } from "@mui/material";
 import { CheckCircle } from "@mui/icons-material";
-import { phone1, phone2, email, address } from "../../utils";
+import { phone1, phone2, email, email2, whatsapp, address } from "../../utils";
+
 
 const Contact = () => {
   const [data, setData] = useState({
@@ -329,6 +330,24 @@ const Contact = () => {
                   className="text-md text-gray-900 hover-text-main-600"
                 >
                   {email}
+                </a>
+                {/* <Link
+                  to="mailto:kishore@buroneed.com"
+                  
+                >
+                  kishore@buroneed.com
+                </Link> */}
+              </div>
+              <div className="flex-align gap-16 mb-16">
+                <span className="w-40 h-40 flex-center rounded-circle border border-gray-100 text-main-two-600 text-2xl flex-shrink-0">
+                  <i className="ph-fill ph-envelope" />
+                </span>
+
+                <a
+                  href={`mailto:${email2}`}
+                  className="text-md text-gray-900 hover-text-main-600"
+                >
+                  {email2}
                 </a>
                 {/* <Link
                   to="mailto:kishore@buroneed.com"
