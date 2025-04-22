@@ -3,9 +3,12 @@ import $ from "jquery";
 import query from "jquery";
 import "select2";
 import { Link, NavLink, useNavigate } from "react-router-dom";
-import { FaPhoneAlt, FaFacebookF } from "react-icons/fa";
+import { FaPhoneAlt, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { FaXTwitter } from "react-icons/fa6";
+import { BsInstagram } from "react-icons/bs";
+import { IoLogInOutline } from "react-icons/io5";
 import logo from "../../assets/header/logo.png";
 import axios from "../../axios";
 import cartContext from "../Context/cartContext";
@@ -225,9 +228,8 @@ const Header = () => {
               <li
                 onClick={() => {
                   handleMenuClick(0);
-                  handleMenuToggle(); // Close the menu
                 }}
-                className="nav-menu__item"
+                className="nav-menu__item "
               >
                 <Link
                   to="/"
@@ -238,14 +240,7 @@ const Header = () => {
                   Home
                 </Link>
               </li>
-
-              <li
-                onClick={() => {
-                  handleMenuClick(1);
-                  handleMenuToggle();
-                }}
-                className="nav-menu__item"
-              >
+              <li onClick={() => handleMenuClick(1)} className="nav-menu__item">
                 <Link
                   to="/about"
                   className={`nav-menu__link ${
@@ -257,11 +252,8 @@ const Header = () => {
               </li>
 
               <li
-                onClick={() => {
-                  handleMenuClick(2);
-                  handleMenuToggle();
-                }}
-                className="nav-menu__item"
+                onClick={() => handleMenuClick(2)}
+                className="nav-menu__item "
               >
                 <Link
                   to="#"
@@ -272,14 +264,7 @@ const Header = () => {
                   Brochure
                 </Link>
               </li>
-
-              <li
-                onClick={() => {
-                  handleMenuClick(3);
-                  handleMenuToggle();
-                }}
-                className="nav-menu__item"
-              >
+              <li onClick={() => handleMenuClick(3)} className="nav-menu__item">
                 <Link
                   to="/contact"
                   className={`nav-menu__link ${
@@ -419,6 +404,18 @@ const Header = () => {
               {/* Header Middle Right start */}
               <div className="header-right flex-align d-lg-block d-none">
                 <div className="header-two-activities flex-align flex-wrap gap-32">
+                  {/* <Link
+                    to="http://targetdemo.asktek.net/tompg.buroneed.webapp/"
+                    className="flex-align flex-column gap-8 item-hover-two"
+                    target="_blank"
+                  >
+                    <span className="text-2xl d-flex position-relative item-hover__text">
+                      <IoLogInOutline />
+                    </span>
+                    <span className="text-md item-hover__text d-none d-lg-flex">
+                      Login
+                    </span>
+                  </Link> */}
                   <Link
                     to="/cart"
                     className="flex-align flex-column gap-8 item-hover-two"
@@ -588,19 +585,13 @@ const Header = () => {
               </div>
               {/* Header Right start */}
               <div className="header-right flex-align">
-                <div
-                  className="me-8 d-lg-none"
-                  style={{
-                    minWidth: "89vw",
-                    display: "flex",
-                    justifyContent: "space-between",
-                  }}
-                >
+                <div className="me-8 d-lg-none d-block ">
                   <button
                     onClick={handleMenuToggle}
                     type="button"
                     className="toggle-mobileMenu d-lg-none ms-3n text-4xl d-flex "
                   >
+                    {" "}
                     <i className="ph ph-list text-white" />{" "}
                   </button>
                   <div className="header-two-activities flex-align flex-wrap gap-32">
@@ -613,6 +604,18 @@ const Header = () => {
                         <i className="ph ph-magnifying-glass text-white" />
                       </span>
                     </button>
+
+                    {/* <Link
+                      to="http://targetdemo.asktek.net/tompg.buroneed.webapp/"
+                      className="flex-align flex-column gap-8 item-hover-two"
+                    >
+                      <span className="text-2xl text-white d-flex position-relative item-hover__text">
+                        <IoLogInOutline color="white" />
+                      </span>
+                      <span className="text-md text-white item-hover__text d-none d-lg-flex">
+                        Login
+                      </span>
+                    </Link> */}
 
                     <Link
                       to="/cart"

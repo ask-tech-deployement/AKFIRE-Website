@@ -74,7 +74,7 @@ const Banner = () => {
                       Systems & More
                     </p>
                     <Link
-                      to="/category/fire-safety"
+                      to={`/product/1/0`}
                       className="btn btn-outline-white d-inline-flex align-items-center rounded-pill gap-8 mt-48"
                     >
                       Explore Fire Safety
@@ -106,7 +106,7 @@ const Banner = () => {
                       Equipment
                     </p>
                     <Link
-                      to="/category/tools-equipment"
+                      to={`/product/2/0`}
                       className="btn btn-outline-white d-inline-flex align-items-center rounded-pill gap-8 mt-48"
                     >
                       View Tools
@@ -137,7 +137,7 @@ const Banner = () => {
                       Shockproof Solutions for Hazard-Free Electrical Work
                     </p>
                     <Link
-                      to="/category/electrical-safety"
+                      to={`/product/3/0`}
                       className="btn btn-outline-white d-inline-flex align-items-center rounded-pill gap-8 mt-48"
                     >
                       Electrical Solutions

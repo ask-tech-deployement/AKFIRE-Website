@@ -6,7 +6,7 @@ import { FaXTwitter, FaLocationDot } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { BsInstagram } from "react-icons/bs";
-import { phone1, phone2, email, address } from "../../utils";
+import { phone1, phone2, email, email2, whatsapp, address } from "../../utils";
 
 const Footer = () => {
   return (
@@ -59,6 +59,15 @@ const Footer = () => {
               </a>
             </div>
             <div className="flex-align gap-16 mb-16">
+              <MdEmail />
+              <a
+                href={`mailto:${email2}`}
+                className="text-md text-gray-900 hover-text-main-600"
+              >
+                {email2}
+              </a>
+            </div>
+            <div className="flex-align gap-16 mb-16">
               <FaLocationDot />
               <span className="text-md text-gray-900">{address}</span>
             </div>
@@ -103,7 +112,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href={`https://wa.me/918884057812`}
+                  href={`https://wa.me/${whatsapp}`}
                   className="text-dark"
                   target="_blank"
                   rel="noopener noreferrer"
